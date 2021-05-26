@@ -36,7 +36,7 @@ const App: FC = () => {
           <div className="heading">ToDos</div>
           <input
             type="text"
-            placeholder="Task..."
+            placeholder="Add Task"
             name="task"
             value={task}
             onChange={handleChange}
@@ -49,7 +49,7 @@ const App: FC = () => {
             onChange={handleChange}
           />
         </div>
-        <button onClick={addTask}>Add Task</button>
+        <button onClick={addTask}>Add ToDo</button>
       </div>
       <div className="todoList">
         {todoList.map((task: ITask, key: number) => {
