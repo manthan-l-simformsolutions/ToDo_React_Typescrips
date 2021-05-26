@@ -25,7 +25,7 @@ const App: FC = () => {
   const completeTask = (taskNameToDetele: string): void => {
     setTodoList(
       todoList.filter((task) => {
-        return task.taskName != taskNameToDetele;
+        return task.taskName !== taskNameToDetele;
       })
     );
   };
